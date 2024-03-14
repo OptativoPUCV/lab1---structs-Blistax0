@@ -15,14 +15,11 @@ int findMax(int arr[], int size) {
 
   int datoMayor = arr[0];
 
-  for (int i = 0; i < size; i++){
-    if (arr[i] > datoMayor){
+  for (int i = 0; i < size; i++)
+    if (arr[i] > datoMayor)
       datoMayor = arr[i];
-      printf("Dato = %d\n", datoMayor);
-    }
-  }
   
-  return 0;
+  return datoMayor;
 }
 
 /*
