@@ -13,3 +13,17 @@ exercises.c:21:7: note: ...this statement, but the latter is misleadingly indent
 cc1: all warnings being treated as errors
 Compilation failed
 25870de
+Thu 14 Mar 2024 08:39:20 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:16:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   16 |     if (arr[i] > datoMayor)
+      |     ^~
+exercises.c:18:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   18 |       printf("Dato = %d\n", datoMayor);
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+587c59c
