@@ -72,3 +72,8 @@ exercises.c:48:29: error: ‘listaPares’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 09eb537
+Thu 14 Mar 2024 09:13:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+9f8ef94
