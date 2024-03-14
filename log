@@ -77,3 +77,14 @@ Thu 14 Mar 2024 09:13:22 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9f8ef94
+Thu 14 Mar 2024 09:16:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+test.c: In function ‘filterEvenNumbers’:
+exercises.c:48:29: error: ‘listaPares’ is used uninitialized [-Werror=uninitialized]
+   48 |   int *listaPares = (int *) realloc(listaPares, sizeof(int) * size);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+581731b
