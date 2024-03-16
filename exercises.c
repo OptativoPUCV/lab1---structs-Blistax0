@@ -109,7 +109,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) { 
   int ascendente = 0, descendente = 0;
   
-  for (int i = 0; i < size - 1; i++){
+  for (int i = 0; i < size; i++){
     printf("%d\n", descendente);
     if (arr[i] > arr[i + 1])
       descendente++;
@@ -119,7 +119,7 @@ int checkSorted(int arr[], int size) {
   if (ascendente == size)
     return 1;
   
-  for (int i = 0; i < size - 1; i++){
+  for (int i = 0; i < size; i++){
     printf("%d\n", ascendente);
     if (arr[i] < arr[i + 1])
       ascendente++;
