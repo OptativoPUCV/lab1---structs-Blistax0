@@ -110,9 +110,9 @@ int checkSorted(int arr[], int size) {
   int ascendente = 0, descendente = 0;
   
   for (int i = 0; i < size - 1; i++){
+    printf("%d\n", descendente);
     if (arr[i] > arr[i + 1])
       descendente++;
-    printf("%d\n", descendente);
     else break;
   }
   
@@ -120,9 +120,9 @@ int checkSorted(int arr[], int size) {
     return 1;
   
   for (int i = 0; i < size - 1; i++){
+    printf("%d\n", ascendente);
     if (arr[i] < arr[i + 1])
       ascendente++;
-    printf("%d\n", ascendente);
     else break;
   }
 
