@@ -106,30 +106,23 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { 
-  int ascendente = 1, descendente = 1;
+int checkSorted(int arr[], int size) {
+  bool ascendente = true;
+  bool descendente = true;
   
-  for (int i = 0; i < size; i++){
-    printf("%d\n", descendente);
+  for (int i = 0; i < size - 1; i++)
     if (arr[i] > arr[i + 1])
-      descendente++;
-    else break;
-  }
+      ascendente = false;
   
-  if (ascendente == size)
-    return 1;
-  
-  for (int i = 0; i < size; i++){
-    printf("%d\n", ascendente);
+  for (int i = 0; i < size - 1; i++)
     if (arr[i] < arr[i + 1])
-      ascendente++;
-    else break;
-  }
-
-  if (descendente == size)
-    return -1;
+      descendente = false;
   
-  return 0;
+  if (ascendente) return 1;
+  
+  else if (descendente) return -1;
+  
+  else return 0;
 }
 /*
 Ejercicio 6: Información de una Biblioteca
