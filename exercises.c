@@ -58,7 +58,20 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   }
   
   return listaPares;*/
-  return NULL;
+
+  int *listaPares = (int *) malloc(sizeof(int) * size);
+  if (listaPares == NULL)
+    exit(EXIT_FAILURE);
+
+  (*newSize) = 0;
+  
+  for (int i = 0; i < size; i++)
+    if (arr[i] % 2 == 0){
+      listaPares[(*newSize)] = arr[i];
+      (*newSize)++;
+    }
+  
+  return listaPares;
 }
 
 /*
