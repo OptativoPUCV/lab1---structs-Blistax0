@@ -168,3 +168,16 @@ exercises.c:126:5: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 519af41
+Sat 16 Mar 2024 10:30:55 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:116:5: error: ‘else’ without a previous ‘if’
+  116 |     else break;
+      |     ^~~~
+exercises.c:126:5: error: ‘else’ without a previous ‘if’
+  126 |     else break;
+      |     ^~~~
+Compilation failed
+235df2d
