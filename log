@@ -142,3 +142,29 @@ Sat 16 Mar 2024 10:29:55 PM UTC:
  tests:  0|3
 total_score: 40/70
 ef4e311
+Sat 16 Mar 2024 10:30:43 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:115:33: error: missing terminating " character [-Werror]
+  115 |     printf("%d\n", descendente);");
+      |                                 ^
+exercises.c:115:33: error: missing terminating " character
+  115 |     printf("%d\n", descendente);");
+      |                                 ^~~
+exercises.c:116:5: error: ‘else’ without a previous ‘if’
+  116 |     else break;
+      |     ^~~~
+exercises.c:125:32: error: missing terminating " character [-Werror]
+  125 |     printf("%d\n", ascendente);");
+      |                                ^
+exercises.c:125:32: error: missing terminating " character
+  125 |     printf("%d\n", ascendente);");
+      |                                ^~~
+exercises.c:126:5: error: ‘else’ without a previous ‘if’
+  126 |     else break;
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+519af41
